@@ -1,4 +1,4 @@
-package com.flexcode.movie.network
+package com.flexcode.movie.data.remote
 
 import com.flexcode.movie.util.Constants.API_KEY
 import okhttp3.Interceptor

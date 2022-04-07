@@ -2,14 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/favoriteFragment"
-        android:title="Favorites"
-        android:icon="@drawable/ic_favorite"
-        app:showAsAction="always"/>
 
-    <item android:id="@+id/searchFragment"
-        android:title="Search"
-        android:icon="@drawable/ic_search"
+    <item android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
         app:showAsAction="always"/>
 
     <item android:id="@+id/topRatedFragment"
@@ -17,9 +13,14 @@
         android:icon="@drawable/ic_toprated"
         app:showAsAction="always"/>
 
-    <item android:id="@+id/homeFragment"
-        android:title="Home"
-        android:icon="@drawable/ic_home"
+    <item android:id="@+id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/favoriteFragment"
+        android:title="Favorites"
+        android:icon="@drawable/ic_favorite"
         app:showAsAction="always"/>
 
 </menu>

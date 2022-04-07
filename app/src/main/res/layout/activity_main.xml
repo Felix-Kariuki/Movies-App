@@ -10,7 +10,7 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="0dp"
         android:layout_height="56dp"
-        android:background="@color/colorGrey"
+        android:background="#000"
         app:itemIconTint="@drawable/bottom_color_selector"
         app:labelVisibilityMode="selected"
         app:layout_constraintBottom_toBottomOf="parent"

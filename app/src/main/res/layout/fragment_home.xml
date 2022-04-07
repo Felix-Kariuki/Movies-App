@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="#000000"
     tools:context=".ui.fragments.HomeFragment">
 
     <ProgressBar
@@ -35,12 +35,18 @@
             android:textSize="16sp"
             android:textColor="@color/textColor"/>
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/pagerPopularMovie"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPopularMovies"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_weight="1" />
+            android:layout_height="350dp"
+            tools:listitem="@layout/movie_list"/>
+
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            android:id="@+id/pagerPopularMovie"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:layout_weight="1" />-->
 
         <TextView
             android:layout_width="match_parent"
@@ -49,11 +55,12 @@
             android:textSize="16sp"
             android:textColor="@color/textColor"/>
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/pagerUpcomingMovie"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUpcomingMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            tools:listitem="@layout/movie_list"/>
+
 
 
     </LinearLayout>
