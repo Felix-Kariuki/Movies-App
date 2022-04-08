@@ -5,6 +5,7 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import com.flexcode.movie.data.local.MovieDatabase
 import com.flexcode.movie.data.remote.ApiClient
 import com.flexcode.movie.models.*
@@ -13,16 +14,10 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
 import io.reactivex.schedulers.Schedulers
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 class DetailViewModel(application: Application) : AndroidViewModel(application) {
-
-    /*private val repository: DetailRepository by lazy {
-        DetailRepository(
-            application.applicationContext
-        )
-    }*/
-
-    //do it that way
     private val repository: DetailRepository
 
     init {
@@ -36,12 +31,6 @@ class DetailViewModel(application: Application) : AndroidViewModel(application) 
     val movieDetails = MutableLiveData<MovieDetailResponse>()
     val movieTrailers = MutableLiveData<List<MovieVideo>>()
     val loading = MutableLiveData<Boolean>()
-
-
-    fun insertMovie(movie: Movie) = repository.insertMovie(movie)
-    fun deleteMovie(movie: Movie) = repository.deleteMovie(movie)
-    fun getSingleMovie(movieId:Int) : LiveData<Movie> = repository.getSingleMovie(movieId)
-    fun getAllMovies(): LiveData<List<Movie>> = repository.getAllMovies
 
 
     fun getMovieDetails(movieId: Int){
@@ -86,6 +75,17 @@ class DetailViewModel(application: Application) : AndroidViewModel(application) 
         )
     }
 
+
+
+    fun insertMovie(movie: Movie) = viewModelScope.launch(Dispatchers.IO) {
+        repository.insertMovie(movie)
+    }
+    fun deleteMovie(movie: Movie) = viewModelScope.launch(Dispatchers.IO) {
+        repository.deleteMovie(movie)}
+    fun getSingleMovie(movieId:Int) : LiveData<Movie> =
+        repository.getSingleMovie(movieId)
+    fun getAllMovies(): LiveData<List<Movie>> =
+        repository.getAllMovies
 
     override fun onCleared() {
         super.onCleared()
