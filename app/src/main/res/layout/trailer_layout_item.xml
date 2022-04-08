@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,20 +6,20 @@
     android:layout_height="150dp"
     android:layout_marginRight="8dp"
     android:layout_marginBottom="8dp"
-    app:backgroundTint="@android:color/white"
     app:cardCornerRadius="4dp"
     app:elevation="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/black">
 
         <ImageView
             android:id="@+id/ivVideoImage"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:scaleType="fitXY"
-            android:src="@drawable/ic_youtube"
+            android:src="@drawable/youtube"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -36,7 +35,7 @@
             android:maxLines="2"
             android:padding="8dp"
             android:text="name"
-            android:textColor="#222"
+            android:textColor="#fff"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

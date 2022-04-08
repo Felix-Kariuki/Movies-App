@@ -18,7 +18,7 @@
         android:icon="@drawable/ic_search"
         app:showAsAction="always"/>
 
-    <item android:id="@+id/favoriteFragment"
+    <item android:id="@+id/favouriteFragment"
         android:title="Favorites"
         android:icon="@drawable/ic_favorite"
         app:showAsAction="always"/>

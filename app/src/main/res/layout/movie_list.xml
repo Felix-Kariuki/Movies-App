@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="140dp"
+    android:layout_height="125dp"
     android:layout_margin="6dp"
     app:cardCornerRadius="15dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -14,8 +14,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvImage"
-        android:layout_width="115dp"
-        android:layout_height="130dp"
+        android:layout_width="105dp"
+        android:layout_height="120dp"
         app:cardCornerRadius="15dp"
         android:layout_margin="5dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,22 +30,23 @@
     </androidx.cardview.widget.CardView>
 
 
+        <TextView
+            android:id="@+id/tvMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:text="Avengers"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/cvImage"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvMovieTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Avengers"
-        android:textSize="23sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/cvImage"/>
-
-
-
-    <TextView
+        <TextView
         android:id="@+id/tvMovieReleaseYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

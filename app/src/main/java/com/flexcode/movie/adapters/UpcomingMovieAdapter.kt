@@ -2,6 +2,7 @@ package com.flexcode.movie.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
@@ -9,12 +10,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.flexcode.movie.R
 import com.flexcode.movie.databinding.MovieListBinding
+import com.flexcode.movie.databinding.UpcomingMovieItemBinding
 import com.flexcode.movie.models.Movie
 import com.flexcode.movie.util.Constants
 import com.squareup.picasso.Picasso
 
 class UpcomingMovieAdapter : RecyclerView.Adapter<UpcomingMovieAdapter.UpcomingViewHolder>() {
-    inner class UpcomingViewHolder(val binding: MovieListBinding) :
+    inner class UpcomingViewHolder(val binding: UpcomingMovieItemBinding) :
         RecyclerView.ViewHolder(binding.root)
 
     private val differCallBack = object : DiffUtil.ItemCallback<Movie>() {
@@ -27,7 +29,7 @@ class UpcomingMovieAdapter : RecyclerView.Adapter<UpcomingMovieAdapter.UpcomingV
 
     val differ = AsyncListDiffer(this, differCallBack)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UpcomingViewHolder {
-        val view = MovieListBinding.inflate(LayoutInflater.from(parent.context),
+        val view = UpcomingMovieItemBinding.inflate(LayoutInflater.from(parent.context),
             parent,
             false
         )
@@ -43,11 +45,11 @@ class UpcomingMovieAdapter : RecyclerView.Adapter<UpcomingMovieAdapter.UpcomingV
                 .into(holder.binding.ivMovieImage)
             //Glide.with(this).load(Constants.IMAGE_BASE_URL + upcoming.poster_path).into(holder.binding.ivMovieImage)
             holder.binding.tvMovieTitle.text = upcoming.title
-            holder.binding.tvMovieReleaseYear.text = upcoming.release_date
-            holder.binding.tvMovieVote.text = upcoming.vote_average.toString()
             setOnClickListener {
+                val bundle = bundleOf("movie_details" to upcoming)
                 Navigation.findNavController(it)
-                    .navigate(R.id.action_homeFragment_to_movieDetailFragment)
+                    .navigate(R.id.action_homeFragment_to_movieDetailFragment, bundle)
+
             }
         }
     }

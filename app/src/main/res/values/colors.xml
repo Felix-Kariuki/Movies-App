@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="colorGrey">#403D3D</color>
+    <color name="colorRed">#AA0F0F</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="background">#FF403D3D</color>
     <color name="textColor">#EDEDED</color>

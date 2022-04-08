@@ -9,7 +9,7 @@ import com.flexcode.movie.models.Movie
 @Database(entities = [Movie::class], version = 1)
 abstract class MovieDatabase : RoomDatabase() {
 
-    abstract fun movieDao() : MovieDao
+    abstract fun movieDao(): MovieDao
 
     companion object {
         @Volatile
@@ -22,8 +22,8 @@ abstract class MovieDatabase : RoomDatabase() {
                     context.applicationContext,
                     MovieDatabase::class.java,
                     "movie.db"
-                ).build()
-            }
+                ).allowMainThreadQueries().build()
+            }//allow access db in main thread is not recommended run in background
             return INSTANCE as MovieDatabase
         }
     }

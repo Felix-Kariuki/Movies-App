@@ -24,6 +24,11 @@
             app:destination="@id/movieDetailFragment" />
     </fragment>
     <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.flexcode.movie.ui.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
         android:id="@+id/topRatedFragment"
         android:name="com.flexcode.movie.ui.fragments.TopRatedFragment"
         android:label="fragment_top_rated"
@@ -36,10 +41,13 @@
         android:id="@+id/movieDetailFragment"
         android:name="com.flexcode.movie.ui.fragments.MovieDetailFragment"
         android:label="fragment_movie_detail"
-        tools:layout="@layout/fragment_movie_detail" />
-    <fragment
-        android:id="@+id/searchFragment"
-        android:name="com.flexcode.movie.ui.fragments.SearchFragment"
-        android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_movie_detail" >
+        <action
+            android:id="@+id/action_movieDetailFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_movieDetailFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
 </navigation>

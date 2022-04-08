@@ -17,11 +17,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+
+
+    <RelativeLayout
         android:id="@+id/lytHome"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_margin="15dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,16 +31,36 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Popular Movies"
-            android:textSize="16sp"
+            android:text="Upcoming Movies"
+            android:textColor="@color/textColor"
+            android:textSize="19sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUpcomingMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text1"
+            tools:listitem="@layout/upcoming_movie_item" />
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movies For You"
+            android:textSize="19sp"
+            android:layout_below="@id/rvUpcomingMovies"
             android:textColor="@color/textColor"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvPopularMovies"
             android:layout_width="wrap_content"
-            android:layout_height="350dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/text3"
             tools:listitem="@layout/movie_list"/>
 
 <!--        <androidx.viewpager.widget.ViewPager-->
@@ -48,21 +70,10 @@
 <!--            android:layout_marginBottom="16dp"-->
 <!--            android:layout_weight="1" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Upcoming Movies"
-            android:textSize="16sp"
-            android:textColor="@color/textColor"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvUpcomingMovies"
-            android:layout_width="wrap_content"
-            android:layout_height="350dp"
-            tools:listitem="@layout/movie_list"/>
 
 
 
-    </LinearLayout>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

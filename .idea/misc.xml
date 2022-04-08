@@ -10,19 +10,24 @@
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/drawable/ic_latest.xml" value="0.101" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2265" />
+        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/drawable/ic_play_circle.xml" value="0.224" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/drawable/ic_search.xml" value="0.101" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/drawable/ic_toprated.xml" value="0.101" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/drawable/ic_youtube.xml" value="0.1" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/activity_main.xml" value="0.128" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/fragment_favourite.xml" value="0.24351851851851852" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/fragment_home.xml" value="0.25" />
-        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/fragment_movie_detail.xml" value="0.24351851851851852" />
+        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/fragment_movie_detail.xml" value="0.264" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/fragment_search.xml" value="0.24351851851851852" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/fragment_top_rated.xml" value="0.24351851851851852" />
+        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/genre_item.xml" value="0.25" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/item_genre.xml" value="0.264" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/item_popular_view_pager.xml" value="0.13703703703703704" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/item_trailer.xml" value="0.25" />
-        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/movie_list.xml" value="0.176" />
+        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/movie_list.xml" value="0.264" />
+        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/saved_movie_item.xml" value="0.25" />
+        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/trailer_layout_item.xml" value="0.25" />
+        <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/layout/upcoming_movie_item.xml" value="0.25" />
         <entry key="..\:/ANDROID/2 WORK/Movie/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
       </map>
     </option>

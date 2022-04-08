@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="5dp"
     android:layout_margin="5dp"
+    android:backgroundTint="#333"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
         <TextView
@@ -12,6 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5dp"
+            android:textColor="#f0f0f0"
             android:text="Animation"/>
 
 </androidx.cardview.widget.CardView>
