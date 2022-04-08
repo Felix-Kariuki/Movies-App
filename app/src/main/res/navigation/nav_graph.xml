@@ -28,15 +28,7 @@
         android:name="com.flexcode.movie.ui.fragments.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
-    <fragment
-        android:id="@+id/topRatedFragment"
-        android:name="com.flexcode.movie.ui.fragments.TopRatedFragment"
-        android:label="fragment_top_rated"
-        tools:layout="@layout/fragment_top_rated" >
-        <action
-            android:id="@+id/action_topRatedFragment_to_movieDetailFragment"
-            app:destination="@id/movieDetailFragment" />
-    </fragment>
+
     <fragment
         android:id="@+id/movieDetailFragment"
         android:name="com.flexcode.movie.ui.fragments.MovieDetailFragment"

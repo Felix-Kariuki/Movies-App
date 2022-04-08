@@ -1,8 +1,6 @@
 package com.flexcode.movie.data.remote
 
-import com.flexcode.movie.models.MovieDetailResponse
-import com.flexcode.movie.models.MovieResponse
-import com.flexcode.movie.models.MovieVideoResponse
+import com.flexcode.movie.models.*
 import com.flexcode.movie.util.Constants.BASE_URL
 import io.reactivex.Single
 import okhttp3.OkHttpClient
@@ -30,8 +28,9 @@ class ApiClient {
         return api.getUpComingMovies()
     }
 
-    fun getTopRatedMovies(): Single<MovieResponse>{
-        return api.getTopRatedMovies()
+
+    fun getSearchMovies(search:String):Single<MovieSearchResponse>{
+        return api.getSearchMovies(search)
     }
 
     fun getMovieTrailers(movieId: Int): Single<MovieVideoResponse>{

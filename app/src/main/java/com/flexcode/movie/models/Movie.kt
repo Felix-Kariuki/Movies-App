@@ -41,3 +41,16 @@ data class MovieGenre (
 
     var name: String?
 ) : Serializable
+
+//search
+data class MovieSearch(
+    var vote_count : Int,
+    var poster_path : String?=null,
+    var backdrop_path : String?=null,
+    var title : String?=null,
+    var overview : String?=null,
+    var vote_average : String?=null,
+    var release_date : String?=null
+
+) : Serializable
+

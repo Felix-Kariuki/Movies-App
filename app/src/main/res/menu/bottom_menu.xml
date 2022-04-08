@@ -6,12 +6,7 @@
     <item android:id="@+id/homeFragment"
         android:title="Home"
         android:icon="@drawable/ic_home"
-        app:showAsAction="always"/>
-
-    <item android:id="@+id/topRatedFragment"
-        android:title="Top Rated"
-        android:icon="@drawable/ic_toprated"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/searchFragment"
         android:title="Search"

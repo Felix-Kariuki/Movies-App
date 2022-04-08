@@ -65,14 +65,21 @@ dependencies {
     kapt "androidx.room:room-compiler:$roomVersion"
     //kapt "android.arch.persistence.room:compiler:$roomVersion"
     implementation "androidx.room:room-ktx:$roomVersion"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
+
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.5.1'
+
+    // Coroutine Lifecycle Scopes
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+
 
     //navigation
     implementation "androidx.navigation:navigation-fragment-ktx:2.4.1"
     implementation "androidx.navigation:navigation-ui-ktx:2.4.1"
     implementation 'androidx.fragment:fragment-ktx:1.4.1'
-//    implementation "androidx.navigation:navigation-fragment-ktx:$navVersion"
-//    implementation "androidx.navigation:navigation-ui-ktx:$navVersion"
 
 
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
