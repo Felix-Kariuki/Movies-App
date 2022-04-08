@@ -1,7 +1,7 @@
 # Movies-App
 
 This is a movies application which fecthes upcoming and popular movies from the movie Database([TMBD](https://www.themoviedb.org/documentation/api)). It is built 
-Using clean architecture and MVVM (Model-view-viewModel)
+Using clean architecture and MVVM (Model-view-viewModel). 
 
 ## Screenshots
 <img src="/screenshots/home.png" width="260">&emsp;
@@ -51,6 +51,8 @@ You can get the API Key from [TMBD](https://www.themoviedb.org/documentation/api
 This application fetches its data from [TheMovieDB](https://www.themoviedb.org/). Check out their [Documentation](https://developers.themoviedb.org/3/getting-started/introduction) to get more information
 
 ## Author
+Contact me for any support or assistance
+
 Twitter - [@felixkariuki_](https://twitter.com/felixkariuki_)
 
 LinkedIn - [Felix Kariuki](https://www.linkedin.com/in/felix-kariuki/)
