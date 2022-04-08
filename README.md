@@ -4,6 +4,8 @@ This is a movies application which fecthes upcoming and popular movies from the 
 Using clean architecture and MVVM (Model-view-viewModel)
 
 ## Screenshots
+<img src="/screenshots/home.png" width="260">&emsp;
+<img src="/screenshots/detail.png" width="260">
 
 # Architecture
 This Application uses [MVVM]() Architecture  to allow separation of concerns.
