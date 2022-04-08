@@ -42,6 +42,9 @@
         android:name="com.flexcode.movie.ui.fragments.MovieDetailFragment"
         android:label="fragment_movie_detail"
         tools:layout="@layout/fragment_movie_detail" >
+        <argument
+            android:name="movie_details"
+            app:argType="com.flexcode.movie.models.Movie" />
         <action
             android:id="@+id/action_movieDetailFragment_to_favouriteFragment"
             app:destination="@id/favouriteFragment" />

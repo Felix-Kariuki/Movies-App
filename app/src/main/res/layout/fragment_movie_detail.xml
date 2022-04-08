@@ -56,7 +56,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            />
+             />
 
         <TextView
             android:id="@+id/tvMovieTitle"
@@ -127,13 +127,13 @@
                         app:layout_constraintTop_toBottomOf="@id/textView3" />
 
                     <ImageView
-                        android:id="@+id/ivStar"
+                        android:id="@+id/ivStart"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:padding="10dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/star"
-                        app:layout_constraintEnd_toEndOf="@id/tvMovieRate"
+                        android:padding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.861"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />

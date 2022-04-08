@@ -9,8 +9,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.flexcode.movie.R
 import com.flexcode.movie.adapters.PopularMovieAdapter
 import com.flexcode.movie.adapters.UpcomingMovieAdapter
 import com.flexcode.movie.databinding.FragmentHomeBinding
@@ -39,6 +42,12 @@ class HomeFragment : Fragment() {
 
         setUpRecyclerView()
 
+       /* popularMovieAdapter.setOnItemClickListener {
+            val bundle = Bundle().apply {
+                putSerializable("movie_details",it)
+            }
+            findNavController().navigate(R.id.action_homeFragment_to_movieDetailFragment,bundle)
+        }*/
         viewModel.popularMovie.observe(viewLifecycleOwner, Observer { popularMovie ->
             popularMovie?.let { movies ->
                 binding.lytHome.visibility = View.VISIBLE

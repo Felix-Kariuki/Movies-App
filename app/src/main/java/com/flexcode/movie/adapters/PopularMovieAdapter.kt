@@ -1,5 +1,7 @@
 package com.flexcode.movie.adapters
 
+import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -53,7 +57,7 @@ class PopularMovieAdapter:
                 val bundle = bundleOf("movie_details" to movie)
                 Navigation.findNavController(it)
                     .navigate(R.id.action_homeFragment_to_movieDetailFragment, bundle)
-
+                onItemClickListener?.let { it(movie) }
             }
         }
 
@@ -61,6 +65,12 @@ class PopularMovieAdapter:
 
     override fun getItemCount(): Int {
        return differ.currentList.size
+    }
+
+    private var onItemClickListener: ((Movie) -> Unit)? = null
+
+    fun setOnItemClickListener(listener: (Movie) -> Unit) {
+        onItemClickListener = listener
     }
 
 }

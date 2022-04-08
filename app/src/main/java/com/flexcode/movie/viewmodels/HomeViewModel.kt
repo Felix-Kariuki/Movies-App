@@ -32,7 +32,7 @@ class HomeViewModel(application: Application) : AndroidViewModel(application) {
                     override fun onSuccess(t: MovieResponse) {
                         popularMovie.value = t.results
                         loading.value = false
-                        Log.d("Popular", "Retrieved")
+                        Log.d("Popular", "Retrieved${popularMovie.value}")
                     }
 
                     override fun onError(e: Throwable) {
