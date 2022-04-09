@@ -13,29 +13,27 @@ This Application uses [MVVM]() Architecture  to allow separation of concerns.
 
 # Libraries & Tools
 
-[MVVM](https://developer.android.com/topic/libraries/architecture/viewmodel)
+* [Retrofit](https://github.com/square/retrofit)
 
-[Retrofit](https://github.com/square/retrofit)
+* [Room](https://developer.android.com/topic/libraries/architecture/room.html)
 
-[Room](https://developer.android.com/topic/libraries/architecture/room.html)
+* [RxJava](https://github.com/ReactiveX/RxJava)
 
-[RxJava](https://github.com/ReactiveX/RxJava)
+* [Navigation Components](https://developer.android.com/guide/navigation)
 
-[Navigation Components](https://developer.android.com/guide/navigation)
+* [Kotlin](https://kotlinlang.org/docs/reference/)
 
-[Kotlin](https://kotlinlang.org/docs/reference/)
+* [Coroutines](https://kotlinlang.org/docs/reference/coroutines.html)
 
-[Coroutines](https://kotlinlang.org/docs/reference/coroutines.html)
+* [LiveData](https://developer.android.com/topic/libraries/architecture/livedata.html)
 
-[LiveData](https://developer.android.com/topic/libraries/architecture/livedata.html)
+* [View Model](https://developer.android.com/topic/libraries/architecture/viewmodel)
 
-[View Model](https://developer.android.com/topic/libraries/architecture/viewmodel)
+* [OkHttp](https://square.github.io/okhttp/)
 
-[OkHttp](https://square.github.io/okhttp/)
+* [Lifecycle]( https://developer.android.com/topic/libraries/architecture/lifecycle)
 
-[Lifecycle]( https://developer.android.com/topic/libraries/architecture/lifecycle)
-
-[Glide](https://github.com/bumptech/glide)
+* [Glide](https://github.com/bumptech/glide)
 
 
 ## How to use
@@ -48,7 +46,7 @@ add API_KEY = "Your Api Key" in Constants file
 ```
 You can get the API Key from [TMBD](https://www.themoviedb.org/documentation/api) site 
 ### Data source
-This application fetches its data from [TheMovieDB](https://www.themoviedb.org/). Check out their [Documentation](https://developers.themoviedb.org/3/getting-started/introduction) to get more information
+This application fetches its data from [TheMovieDB](https://www.themoviedb.org/). Check out this [Documentation](https://developers.themoviedb.org/3/getting-started/introduction) to get more information
 
 ## Author
 Contact me for any support or assistance
