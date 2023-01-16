@@ -3,6 +3,8 @@
 This is a movies application which fecthes upcoming and popular movies from the movie Database([TMBD](https://www.themoviedb.org/documentation/api)). It is built 
 Using clean architecture and MVVM (Model-view-viewModel). 
 
+##
+
 ## Screenshots
 <img src="/screenshots/home.png" width="260">&emsp;
 <img src="/screenshots/detail.png" width="260">
